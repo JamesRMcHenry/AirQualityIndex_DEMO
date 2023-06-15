@@ -6,9 +6,9 @@ const getCardColor = (aqi) => {
     } else if (aqi <= 100) {
         return 'bg-warning';
     } else if (aqi <= 150) {
-        return 'bg-orange';
-    } else if (aqi <= 200) {
         return 'bg-danger text-white';
+    } else if (aqi <= 200) {
+        return 'bg-danger text-warning';
     } else if (aqi <= 300) {
         return 'bg-very-unhealthy text-white';    
     } else {

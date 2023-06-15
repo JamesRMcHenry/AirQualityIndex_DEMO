@@ -4,8 +4,8 @@ const AirQualityLevelsTable = () => {
       { range: '51 - 100', level: '~Moderate'},
       { range: '101 - 150', level: 'Unhealthy for Sensitive Groups'},
       { range: '151 - 200', level: 'Unhealthy.'},
-      { range: '201 - 300', level: 'Very Unhealthy!'},
-      { range: '301 and higher', level: 'Hazardous!!'},
+      { range: '201 - 300', level: 'Hazardous!'},
+      { range: '301 and higher', level: 'This is Bad!!'},
     ];
   
     return (
