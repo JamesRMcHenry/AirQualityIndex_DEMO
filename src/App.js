@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import CitySearch from './CitySearch';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import PollutantInfo from './PollutantInfo';
 import AirQualityCard from './AirQualityCard';
 import './App.css';
 
@@ -35,9 +36,9 @@ const [error, setError] = useState(null)
       <div class='alert alert-danger' role='alert'>{error}</div>
     )}
     {airQualityData && (
-      //Pollutant Info
       <>
       <AirQualityCard data={airQualityData}/>
+      <PollutantInfo pollutant={airQualityData.dominentpol}/>
       </>
     )}
     </div>
