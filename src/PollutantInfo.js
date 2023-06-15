@@ -1,7 +1,7 @@
 const PollutantInfo = ({pollutant}) => {
     const getPollutantInfo = (pollutant) => {
         switch (pollutant) {
-            case 'pm2.5':
+            case 'pm25':
               return 'PM2.5 are tiny particles in the air that reduce visibility and cause the air to appear hazy when levels are elevated. They can be the result of burning fossil fuels and chemical reactions.';
             case 'pm10':
               return 'PM10 are inhalable particles that are small enough to penetrate the thoracic region of the respiratory system. They can originate from dust stirred by vehicles on roads, wood burning, and other industrial activities.';
