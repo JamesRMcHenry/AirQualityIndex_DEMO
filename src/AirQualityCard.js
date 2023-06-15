@@ -12,7 +12,7 @@ const getCardColor = (aqi) => {
     } else if (aqi <= 300) {
         return 'bg-very-unhealthy text-white';    
     } else {
-        return 'bg-hazardous ';
+        return 'bg-hazardous';
     }
 }
 
@@ -22,9 +22,9 @@ const AirQualityCard = ({data}) => {
     return (
         <div className={`card mb-4 ${cardColor}`}>
             <div className='card-body'>
-            <h5 className='card-title'>{city.name}</h5>
-            <h6 className='card-subtitle mb-2'>Air Quality Index: {aqi}</h6>
-            <p className='card-text'>Dominent Pollutant: {dominentpol}</p>
+            <h5 className='card-title display-6'>{city.name}</h5>
+            <h6 className='card-subtitle mb-2 display-4'>Air Quality Index: <strong>{aqi}</strong></h6>
+            <p className='card-text h4'>Dominent Pollutant: {dominentpol}</p>
             <p className='card-text'>Last Updated: {time.s}</p>
             </div>
         </div>

@@ -16,7 +16,7 @@ const handleSearch = (event) => {
     return (
         <form onSubmit={handleSearch} className='mb-4'>
             <input type='text' placeholder='Enter city...' onChange={handleInputChange} className='form-control'></input>
-            <button type='submit' className='btn btn-success mt-3'>Search</button>
+            <button type='submit' className='btn btn-success mt-3'>Search City</button>
         </form>
     )
 }
